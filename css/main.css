@@ -1,0 +1,371 @@
+body {
+  color: #575445;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2em;
+  font-family: "Poppins", serif;
+}
+
+h1,
+h2 {
+  font-family: "Roboto", serif;
+}
+
+h3 {
+  font-family: "Roboto", serif;
+  font-size: 20px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 128px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  width: 460px;
+  justify-content: space-between;
+}
+
+.menu__item a {
+  font-size: 13px;
+  line-height: 1.08em;
+  color: #444444;
+}
+
+.btn {
+  min-width: 125px;
+  background: #575445;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 1.4em;
+  color: #fff;
+  padding: 10px 18px;
+}
+
+.menu__item_active a {
+  font-size: 15px;
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.2em;
+  margin-top: 7px;
+}
+
+.section-description {
+  width: 538px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-link {
+  font-size: 15px;
+  line-height: 1.4em;
+}
+
+.section-link::after {
+  content: "";
+  width: 19px;
+  height: 10px;
+  background: url(/img/arrow.png);
+  margin-left: 6px;
+  display: inline-block;
+}
+
+/* ** */
+
+.header {
+  background: #fff;
+  padding: 18px 0;
+}
+
+.header__content {
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+}
+
+.header__nav {
+  margin-right: 40px;
+  margin-left: auto;
+}
+
+.header__btn-buy {
+  margin-right: 20px;
+}
+
+/* offer */
+
+.offer {
+  padding-top: 237px;
+  padding-bottom: 227px;
+  background: url(/img/main.png) center / cover;
+}
+
+.offer__title {
+  font-size: 48px;
+  line-height: 1.2em;
+  color: #fff;
+  margin-bottom: 9px;
+  width: 416px;
+}
+
+.offer__description {
+  font-size: 17px;
+  line-height: 1.48em;
+  color: #fff;
+  width: 495px;
+}
+
+.about {
+  background: #fff;
+  padding: 100px 0;
+}
+
+.about__content {
+  display: flex;
+}
+
+.about__img,
+.about__info {
+  width: 50%;
+}
+
+.about__info {
+  padding-top: 71px;
+  padding-left: 43px;
+}
+
+.about__description {
+  width: 359px;
+  margin: 0 0 31px;
+  text-align: left;
+}
+
+.advantages {
+  background: #fafafc;
+  padding-top: 100px;
+}
+
+.advantages__content {
+  height: 700px;
+}
+
+.advantages__title {
+  width: 600px;
+  height: 129px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.advantages__title p {
+  margin: 0 auto;
+}
+
+.advantages__info h3 {
+  font-size: 20px;
+  padding-bottom: 9px;
+}
+
+.advantages__description {
+  width: 289px;
+  height: 57px;
+  font-size: 14px;
+}
+
+.advantages__title h2 {
+  padding-bottom: 7px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list__block {
+  width: 64px;
+  height: 64px;
+  background: #575445;
+  padding: 20px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.list__item {
+  width: 388px;
+  height: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.assortment {
+  background: #fff;
+  padding: 100px 0;
+}
+
+.assortment__content {
+  width: 1200px;
+  height: 1152px;
+}
+
+.assortment__title {
+  margin: 0 auto;
+  width: 600px;
+  height: 129px;
+  text-align: center;
+}
+
+.wrapper {
+  width: 1168px;
+  height: 962px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.wrapper__item {
+  width: 379px;
+  height: 473px;
+  border-radius: 10px;
+}
+
+.wrapper__item h3 {
+  font-size: 28px;
+}
+
+.wrapper__item a {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.wrapper__item p {
+  padding-top: 9px;
+}
+
+.wrapper__item:nth-child(1) {
+  background: url(/img/assortment/accessoires.png);
+}
+
+.wrapper__item:nth-child(2) {
+  background: url(/img/assortment/apparel.png);
+}
+
+.wrapper__item:nth-child(3) {
+  background: url(/img/assortment/climbing-gear.png);
+}
+
+.wrapper__item:nth-child(4) {
+  background: url(/img/assortment/headwear.png);
+}
+
+.wrapper__item:nth-child(5) {
+  background: url(/img/assortment/hiking-gear.png);
+}
+
+.wrapper__item:nth-child(6) {
+  background: url(/img/assortment/jakets.png);
+}
+
+.item__block {
+  width: 299px;
+  height: 87px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.assortment__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* location */
+
+.location {
+  height: 600px;
+  background: url(/img/sea.jpg) center / cover;
+}
+
+.location__img {
+  margin: 512px 40px 40px 785px;
+}
+
+/* location */
+
+/* shop */
+
+.shop {
+  height: 393px;
+  background-color: #375c58;
+}
+
+.shop__content {
+  width: 600px;
+  height: 129px;
+  margin: 0 auto;
+  padding-top: 100px;
+  color: #fafafc;
+  text-align: center;
+}
+
+.shop__s {
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+.shop__title {
+  color: #e6b939;
+  font-size: 30px;
+  margin-bottom: 7px;
+  line-height: 40px;
+}
+
+.shop__btn{
+    width: 111px;
+    height: 44px;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 21px;
+    background-color: #FFFFFF;
+    color: #575445;
+}
+
+.shop__description{
+    line-height: 19px;
+}
+
+/* shop */
+
+/* footer */
+
+.footer{
+    height: 567px;
+    background: #575445;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__content{
+    width: 1168px;
+    height: 368px;
+}
+
+.footer__logo{
+    margin: 0 auto;
+}
+
+/* footer */
