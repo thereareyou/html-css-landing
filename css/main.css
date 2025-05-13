@@ -333,39 +333,123 @@ h3 {
   line-height: 40px;
 }
 
-.shop__btn{
-    width: 111px;
-    height: 44px;
-    border-radius: 6px;
-    font-size: 15px;
-    margin-top: 21px;
-    background-color: #FFFFFF;
-    color: #575445;
+.shop__btn {
+  width: 111px;
+  height: 44px;
+  border-radius: 6px;
+  font-size: 15px;
+  margin-top: 21px;
+  background-color: #ffffff;
+  color: #575445;
 }
 
-.shop__description{
-    line-height: 19px;
+.shop__description {
+  line-height: 19px;
 }
 
 /* shop */
 
 /* footer */
 
-.footer{
-    height: 567px;
-    background: #575445;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer {
+  height: 567px;
+  background: #575445;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer__content{
-    width: 1168px;
-    height: 368px;
+.footer__content {
+  width: 1168px;
+  height: 368px;
 }
 
-.footer__logo{
-    margin: 0 auto;
+.footer__logo {
+  margin: 0 auto;
+}
+
+.footer__info {
+  display: flex;
+  margin-top: 76px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.info__list {
+  width: 221px;
+  height: 193px;
+}
+
+.info__list:nth-child(4) {
+  width: 458px;
+  height: 193px;
+}
+
+.info__list:nth-child(5) {
+  width: 694px;
+  height: 19px;
+  margin-top: 31px;
+}
+
+.info__list:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 156px;
+  height: 24px;
+  margin-top: 26px;
+  margin-left: 306px;
+}
+
+.info__list:last-child .info__item {
+  margin-top: 0; 
+}
+
+.info__list:last-child img {
+  width: 24px; 
+  height: 24px;
+}
+
+.info__title {
+  color: #e6b939 !important;
+}
+
+.info__item {
+  color: #ffffff;
+  display: flex;
+  margin-top: 9px;
+}
+
+.info__item:nth-child(1) {
+  margin-top: 0;
+}
+
+
+
+.info__form {
+  width: 458px;
+  height: 53px;
+  background-color: #f9fafb;
+  border-radius: 6px;
+  display: flex;
+}
+
+.email-input {
+  width: 364px;
+  height: 38px;
+  margin-top: 8px;
+  margin-left: 7px;
+  color: #000;
+}
+
+.submit-btn {
+  width: 73px;
+  height: 39px;
+  background-color: #575445;
+  border-radius: 10px;
+  margin: 7px;
+  font-size: 14px;
 }
 
 /* footer */
