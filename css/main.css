@@ -126,6 +126,9 @@ h3 {
   width: 495px;
 }
 
+/* offer */
+
+/* about */
 .about {
   background: #fff;
   padding: 100px 0;
@@ -151,6 +154,9 @@ h3 {
   text-align: left;
 }
 
+/* about */
+
+/* advantages */
 .advantages {
   background: #fafafc;
   padding-top: 100px;
@@ -186,6 +192,10 @@ h3 {
   padding-bottom: 7px;
 }
 
+/* advantages */
+
+/* list */
+
 .list {
   display: flex;
   justify-content: space-around;
@@ -211,6 +221,9 @@ h3 {
   text-align: center;
 }
 
+/* list */
+
+/* assortment */
 .assortment {
   background: #fff;
   padding: 100px 0;
@@ -293,6 +306,8 @@ h3 {
   align-items: center;
 }
 
+/* assortment */
+
 /* location */
 
 .location {
@@ -348,6 +363,38 @@ h3 {
 }
 
 /* shop */
+
+/* subscribe */
+
+.subscribe{
+  width: 1168px;
+  height: 576px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.subscribe__content{
+  display: flex;
+}
+
+.subscribe__img{
+  margin-right: 104px;
+}
+
+.subscribe__info{
+  width: 400px;
+  height: 270px;
+  margin-top: 153px;  
+}
+
+.subscribe__description{
+  width: 384px;
+  text-align: left;
+  margin:7px 0px  20px 0px;
+}
+
+/* subscribe */
 
 /* footer */
 
