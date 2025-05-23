@@ -55,6 +55,12 @@ h3 {
   font-size: 15px;
 }
 
+.menu__btn {
+  display: none;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
 .section-title {
   font-size: 36px;
   line-height: 1.2em;
@@ -76,7 +82,7 @@ h3 {
   content: "";
   width: 19px;
   height: 10px;
-  background: url(/img/arrow.png);
+  background: url(../img/arrow.png);
   margin-left: 6px;
   display: inline-block;
 }
@@ -106,9 +112,10 @@ h3 {
 /* offer */
 
 .offer {
+  width: 100%;
   padding-top: 237px;
   padding-bottom: 227px;
-  background: url(/img/main.png) center / cover;
+  background: url(../img/main.png) center / cover;
 }
 
 .offer__title {
@@ -163,7 +170,7 @@ h3 {
 }
 
 .advantages__content {
-  height: 700px;
+  height: 100%;
 }
 
 .advantages__title {
@@ -192,10 +199,6 @@ h3 {
   padding-bottom: 7px;
 }
 
-/* advantages */
-
-/* list */
-
 .list {
   display: flex;
   justify-content: space-around;
@@ -221,7 +224,7 @@ h3 {
   text-align: center;
 }
 
-/* list */
+/* advantages */
 
 /* assortment */
 .assortment {
@@ -230,8 +233,12 @@ h3 {
 }
 
 .assortment__content {
-  width: 1200px;
+  width: 100%;
   height: 1152px;
+}
+
+.assortment__info {
+  width: 100%;
 }
 
 .assortment__title {
@@ -242,7 +249,7 @@ h3 {
 }
 
 .wrapper {
-  width: 1168px;
+  width: 100%;
   height: 962px;
   display: flex;
   justify-content: space-around;
@@ -269,27 +276,27 @@ h3 {
 }
 
 .wrapper__item:nth-child(1) {
-  background: url(/img/assortment/accessoires.png);
+  background: url(../img/assortment/accessoires.png) center/cover;
 }
 
 .wrapper__item:nth-child(2) {
-  background: url(/img/assortment/apparel.png);
+  background: url(../img/assortment/apparel.png) center/cover;
 }
 
 .wrapper__item:nth-child(3) {
-  background: url(/img/assortment/climbing-gear.png);
+  background: url(../img/assortment/climbing-gear.png) center/cover;
 }
 
 .wrapper__item:nth-child(4) {
-  background: url(/img/assortment/headwear.png);
+  background: url(../img/assortment/headwear.png) center/cover;
 }
 
 .wrapper__item:nth-child(5) {
-  background: url(/img/assortment/hiking-gear.png);
+  background: url(../img/assortment/hiking-gear.png) center/cover;
 }
 
 .wrapper__item:nth-child(6) {
-  background: url(/img/assortment/jakets.png);
+  background: url(../img/assortment/jakets.png) center/cover;
 }
 
 .item__block {
@@ -311,12 +318,15 @@ h3 {
 /* location */
 
 .location {
+  position: relative;
   height: 600px;
-  background: url(/img/sea.jpg) center / cover;
+  background: url(../img/sea.jpg) center / cover;
 }
 
 .location__img {
-  margin: 512px 40px 40px 785px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
 }
 
 /* location */
@@ -324,6 +334,7 @@ h3 {
 /* shop */
 
 .shop {
+  width: 100%;
   height: 393px;
   background-color: #375c58;
 }
@@ -366,32 +377,33 @@ h3 {
 
 /* subscribe */
 
-.subscribe{
-  width: 1168px;
+.subscribe {
+  width: 100%;
   height: 576px;
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
-.subscribe__content{
+.subscribe__content {
   display: flex;
+  flex-wrap: wrap;
 }
 
-.subscribe__img{
+.subscribe__img {
   margin-right: 104px;
 }
 
-.subscribe__info{
+.subscribe__info {
   width: 400px;
   height: 270px;
-  margin-top: 153px;  
+  margin-top: 153px;
 }
 
-.subscribe__description{
+.subscribe__description {
   width: 384px;
   text-align: left;
-  margin:7px 0px  20px 0px;
+  margin: 7px 0px 20px 0px;
 }
 
 /* subscribe */
@@ -422,7 +434,6 @@ h3 {
   justify-content: space-between;
 }
 
-
 .info__list {
   width: 221px;
   height: 193px;
@@ -450,11 +461,11 @@ h3 {
 }
 
 .info__list:last-child .info__item {
-  margin-top: 0; 
+  margin-top: 0;
 }
 
 .info__list:last-child img {
-  width: 24px; 
+  width: 24px;
   height: 24px;
 }
 
@@ -471,8 +482,6 @@ h3 {
 .info__item:nth-child(1) {
   margin-top: 0;
 }
-
-
 
 .info__form {
   width: 458px;
@@ -500,3 +509,364 @@ h3 {
 }
 
 /* footer */
+
+/* adaptive */
+
+/* large 1025-1300px */
+@media (max-width: 1300px) {
+  .container {
+    width: 960px;
+  }
+
+  .header__nav {
+    margin-right: 25px;
+  }
+
+  .list__item {
+    width: 320px;
+  }
+
+  .wrapper__item {
+    width: auto;
+  }
+
+  .subscribe {
+    height: auto;
+  }
+
+  .subscribe__img,
+  .subscribe__info {
+    width: 45%;
+    margin: auto;
+  }
+
+  .info__list {
+    width: auto;
+  }
+  .info__list:nth-child(4) {
+    margin-right: 10px;
+  }
+
+  .info__list:nth-child(5) {
+    width: auto;
+  }
+
+  .info__list:nth-child(6) {
+    margin-right: 10px;
+  }
+
+  .location__img {
+    width: 50%;
+  }
+
+  .footer__info {
+    margin-top: 50px;
+  }
+
+  .info__list {
+    margin-left: 30px;
+  }
+
+  .info__list:nth-child(5) {
+    margin-left: 0;
+  }
+}
+
+/* medium 769-1024px */
+@media (max-width: 1024px) {
+  .container {
+    width: 720px;
+  }
+
+  .header__content {
+    position: relative;
+  }
+
+  .header__nav {
+    display: none;
+    position: absolute;
+    background: #fff;
+    right: 0;
+    top: 60px;
+    border: 2px solid #575445;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .header__nav.header__nav-active {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: auto;
+    text-align: center;
+  }
+
+  .menu__item {
+    margin-bottom: 12px;
+  }
+
+  .menu__item:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .menu__btn {
+    display: block;
+    font-size: 28px;
+  }
+
+  .header__btn-buy {
+    margin-left: auto;
+  }
+
+  .about__info {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  .about__description {
+    width: auto;
+  }
+
+  .advantages {
+    padding-top: 50px;
+  }
+
+  .assortment {
+    padding-top: 50px;
+  }
+
+  .wrapper__item {
+    height: 310px;
+  }
+
+  .item__block {
+    padding-top: 10px;
+  }
+
+  .item__block p {
+    height: 48px;
+  }
+
+  .location {
+    height: 500px;
+    background: url(../img/sea.jpg) 75% center / cover;
+  }
+
+  .subscribe__img {
+    margin: 0;
+  }
+
+  .subscribe__info {
+    margin: 0;
+    padding-top: 27px;
+    padding-left: 18px;
+  }
+
+  .footer {
+    height: 450px;
+  }
+
+  .footer__logo {
+    margin-top: 20px;
+  }
+
+  .footer__info {
+    flex-direction: column;
+  }
+
+  .info__list {
+    display: none;
+  }
+
+  .info__list:nth-child(4) {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+
+  .info__title {
+    display: none;
+  }
+
+  .info__list:nth-child(5) {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .info__list:nth-child(6) {
+    margin: 0 auto;
+  }
+}
+
+/* small 577-768px */
+@media (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+
+  .offer {
+    background: url(../img/main.png) 75% center / cover;
+  }
+
+  .about__content {
+    flex-direction: column;
+  }
+
+  .about {
+    padding: 70px 0;
+  }
+
+  .about__info {
+    padding-left: 0;
+  }
+
+  .about__img,
+  .about__info {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .advantages {
+    padding-top: 50px;
+  }
+
+  .advantages__title {
+    width: 100%;
+  }
+
+  .assortment {
+    height: 2100px;
+    padding: 0;
+  }
+
+  .assortment__title {
+    width: 100%;
+  }
+
+  .wrapper {
+    height: 100%;
+  }
+
+  .wrapper__item {
+    margin-top: 10px;
+  }
+
+  .wrapper__item:nth-child(6) {
+    margin-bottom: 10px;
+  }
+
+  .location {
+    height: 400px;
+  }
+
+  .location__img {
+    width: 60%;
+  }
+
+  .shop__content {
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .subscribe {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .subscribe__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe__info {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .subscribe__description {
+    width: 100%;
+  }
+}
+
+/* extra small 320-567px */
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .menu__btn {
+    margin-left: auto;
+  }
+
+  .offer {
+    padding-top: 137px;
+    padding-bottom: 127px;
+  }
+
+  .offer__title {
+    width: 100%;
+    font-size: 38px;
+  }
+
+  .offer__description {
+    width: auto;
+  }
+
+  .section-description {
+    width: 100%;
+  }
+
+  .advantages__title {
+    height: 100%;
+  }
+
+  .assortment {
+    height: 2170px;
+  }
+
+  .assortment__title {
+    height: 100%;
+  }
+
+  .shop__content {
+    width: 100%;
+  }
+
+  .footer {
+    height: 100%;
+    font-size: 10px;
+  }
+
+  .footer__logo {
+    margin-top: 5px;
+  }
+
+  .footer__info{
+    margin-top: 14px;
+  }
+
+.submit-btn{
+ font-size: 10px;
+}
+  .info__list:nth-child(4),
+  .info__list:nth-child(5) {
+    width: 300px;
+  }
+
+  .info__item,
+  .info__form {
+    width: 100%;
+  }
+}
